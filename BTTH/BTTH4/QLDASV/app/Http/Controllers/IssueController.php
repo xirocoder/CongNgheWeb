@@ -79,13 +79,13 @@ class IssueController extends Controller
                 'status'        => 'required|in:Open,In Progress,Resolved',
             ]);
         
-            // Tìm đối tượng Thesis cần cập nhật
+
             $issue = Issue::find($id);
             
-            // Cập nhật thông tin
+
             $issue->update($request->all());
         
-            // Điều hướng trở lại trang index với thông báo thành công
+
             return redirect()->route('issues.index')->with('success', 'Vấn đề được cập nhật thành công');
     }
 

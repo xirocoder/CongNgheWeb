@@ -18,10 +18,10 @@ crossorigin="anonymous">
     <form action="{{ route('issues.store') }}" method="POST" style="margin: 50px 50px">
         @csrf
         <div class="mb-3">
-            <label for="computer_id" class="form-label">Tên máy tính</label>
+            <label for="computer_id" class="form-label">Tên máy tính - Tên phiên bản</label>
             <select name="computer_id" id="computer_id" class="form-control" required>
             @foreach($computers as $computer)
-                <option value="{{ $computer->id }}">{{ $computer->computer_name }}</option>
+                <option value="{{ $computer->id }}">{{ $computer->computer_name }} - {{ $computer->model }}</option>
             @endforeach
         </select>
         </div>
