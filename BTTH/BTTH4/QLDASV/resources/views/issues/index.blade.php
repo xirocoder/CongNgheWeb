@@ -326,7 +326,7 @@ $(document).ready(function(){
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
-                                                Bạn có chắc chắn muốn xóa đồ án này không?
+                                                Bạn có chắc chắn muốn xóa vấn đề này không?
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
